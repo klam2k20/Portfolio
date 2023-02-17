@@ -27,7 +27,8 @@ function Navbar() {
         {!toggle && <HiOutlineMenu onClick={() => setToggle(true)} />}
         {toggle && (
           <motion.div
-            whileInView={{ x: [250, 0] }}
+            initial={{ x: "100%" }}
+            whileInView={{ x: ["100%", "0%"] }}
             transition={{ duration: 0.75, ease: "easeOut" }}>
             <HiX onClick={() => setToggle(false)} />
             <ul>

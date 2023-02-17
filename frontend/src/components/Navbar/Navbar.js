@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
-import { easeInOut, easeOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import "./Navbar.scss";
 
 import images from "../../constants/images";

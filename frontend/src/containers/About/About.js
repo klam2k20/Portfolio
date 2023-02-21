@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Wrapper from "../Wrapper/Wrapper";
-import { motion } from "framer-motion";
 import { client, imageFor } from "../../client";
 import "./About.scss";
 
@@ -19,7 +18,7 @@ function About() {
       </h1>
       <div className='app_about-items'>
         {abouts.map((about) => (
-          <motion.div key={`about ${about.title}`} className='app_about-item'>
+          <div key={`about ${about.title}`} className='app_about-item'>
             <div className='app_about-item-title'>
               <img src={imageFor(about.imgUrl)} alt='about item' />
               <h2 className='bold_text'>{about.title}</h2>
@@ -27,7 +26,7 @@ function About() {
             <div>
               <p className='app_about-item-description'>{about.description}</p>
             </div>
-          </motion.div>
+          </div>
         ))}
         <div className='app_about-quote'>
           <div />

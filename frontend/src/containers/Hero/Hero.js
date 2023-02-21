@@ -7,7 +7,10 @@ import "./Hero.scss";
 function Hero() {
   return (
     <div id='home'>
-      <motion.div className='app_hero-info'>
+      <motion.div
+        className='app_hero-info'
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+        transition={{ type: "spring", duration: 1, ease: "easeOut", bounce: 0.5 }}>
         <div className='app_hero-intro'>
           <span>👋🏻</span>
           <div>
@@ -16,14 +19,26 @@ function Hero() {
           </div>
         </div>
         <div className='app_hero-position'>
-          <p className='p_text'>Full-Stack Developer</p>
+          <p className='p_text'>Aspiring Full-Stack Developer</p>
           <p className='p_text'>CS/CE NEU @2022</p>
         </div>
       </motion.div>
-      <div className='app_hero-profile'>
+      <motion.div
+        className='app_hero-profile'
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 1, delayChildren: 0.5 }}>
         <img src={images.profile} alt='profile' />
-      </div>
-      <motion.div className='app_hero-skills'>
+      </motion.div>
+      <motion.div
+        className='app_hero-skills'
+        whileInView={{
+          scale: [0, 1],
+          opacity: [0, 1],
+          transition: {
+            duration: 1,
+            ease: "easeInOut",
+          },
+        }}>
         {[images.git, images.react, images.css].map((skill) => (
           <div key={`skill-${skill}`} className='app_flex'>
             <img src={skill} alt='skill' />

@@ -3,7 +3,7 @@ import NavSidebar from "../../components/NavSidebar/NavSidebar";
 import SocialMediaBar from "../../components/SocialMediaBar/SocialMediaBar";
 import "./Wrapper.scss";
 
-function Wrapper(Component, id, className) {
+function Wrapper(Component, id) {
   return () => {
     return (
       <div className='app_container'>

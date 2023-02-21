@@ -30,22 +30,6 @@ function Hero() {
         transition={{ duration: 1, delayChildren: 0.5 }}>
         <img src={images.profile} alt='profile' />
       </motion.div>
-      <motion.div
-        className='app_hero-skills'
-        whileInView={{
-          scale: [0, 1],
-          opacity: [0, 1],
-          transition: {
-            duration: 1,
-            ease: "easeInOut",
-          },
-        }}>
-        {[images.git, images.react, images.css].map((skill) => (
-          <div key={`skill-${skill}`} className='app_flex'>
-            <img src={skill} alt='skill' />
-          </div>
-        ))}
-      </motion.div>
     </div>
   );
 }

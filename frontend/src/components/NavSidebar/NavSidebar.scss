@@ -5,6 +5,10 @@
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 
 .app_navigation_dot {
@@ -18,5 +22,10 @@
 
   &:hover {
     background-color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 1925px) {
+    width: 1rem;
+    height: 1rem;
   }
 }

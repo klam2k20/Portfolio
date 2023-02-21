@@ -1,0 +1,42 @@
+.app_social_media {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 1rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--lightGray-color);
+    border-radius: 50%;
+    transition: all 0.5 ease-out;
+
+    svg {
+      width: 75%;
+      height: 75%;
+    }
+
+    &:hover {
+      background-color: var(--secondary-color);
+
+      svg {
+        color: var(--white-color);
+      }
+    }
+
+    @media screen and (min-width: 1925px) {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}

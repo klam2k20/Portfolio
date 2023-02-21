@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header, About, Work, Skills, Testimonial, Footer } from "./containers/index";
+import { Hero, About, Work, Skills, Contact } from "./containers/index";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.scss";
 
@@ -8,12 +8,11 @@ function App() {
   return (
     <div className='app'>
       <Navbar />
-      <Header />
+      <Hero />
       <About />
       <Work />
       <Skills />
-      <Testimonial />
-      <Footer />
+      <Contact />
     </div>
   );
 }

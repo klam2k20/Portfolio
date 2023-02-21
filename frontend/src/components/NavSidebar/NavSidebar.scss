@@ -1,0 +1,22 @@
+.app_navigation_sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.app_navigation_dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 100rem;
+  cursor: pointer;
+  transition: all 0.5 ease-in-out;
+
+  &:hover {
+    background-color: var(--secondary-color);
+  }
+}

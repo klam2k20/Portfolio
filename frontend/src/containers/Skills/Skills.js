@@ -1,8 +1,9 @@
 import React from "react";
+import Wrapper from "../Wrapper/Wrapper";
 import "./Skills.scss";
 
 function Skills() {
-  return <h1>Skills</h1>;
+  return <h1 id='skills'>Skills</h1>;
 }
 
-export default Skills;
+export default Wrapper(Skills, "skills");

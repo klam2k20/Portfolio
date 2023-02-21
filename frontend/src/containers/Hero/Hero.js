@@ -21,6 +21,7 @@ function Hero() {
         <div className='app_hero-position'>
           <p className='p_text'>Aspiring Full-Stack Developer</p>
           <p className='p_text'>CS/CE NEU @2022</p>
+          <p className='p_text'>Based in NYC</p>
         </div>
       </motion.div>
       <motion.div

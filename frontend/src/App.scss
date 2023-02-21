@@ -19,7 +19,7 @@
 }
 
 .head_text {
-  font-size: 2.75rem;
+  font-size: 2rem;
   font-weight: 800;
   text-align: center;
   color: var(--black-color);
@@ -29,12 +29,12 @@
     color: var(--secondary-color);
   }
 
-  @media screen and (min-width: 2000px) {
+  @media screen and (min-width: 1925px) {
     font-size: 4rem;
   }
 
   @media screen and (max-width: 450px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -44,7 +44,7 @@
   color: var(--gray-color);
   line-height: 1.5;
 
-  @media screen and (min-width: 2000px) {
+  @media screen and (min-width: 1925px) {
     font-size: 1.75rem;
   }
 }
@@ -55,7 +55,7 @@
   color: var(--black-color);
   text-align: left;
 
-  @media screen and (min-width: 2000px) {
+  @media screen and (min-width: 1925px) {
     font-size: 2rem;
   }
 

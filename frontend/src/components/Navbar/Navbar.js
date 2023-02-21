@@ -34,7 +34,9 @@ function Navbar() {
             <ul>
               {links.map((link) => (
                 <li className='app_flex p_text' key={`link-${link}`}>
-                  <a href={`#${link}`}>{link}</a>
+                  <a href={`#${link}`} onClick={() => setToggle(false)}>
+                    {link}
+                  </a>
                 </li>
               ))}
             </ul>

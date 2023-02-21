@@ -9,11 +9,15 @@ function Hero() {
     <div id='home'>
       <motion.div className='app_hero-info'>
         <div className='app_hero-intro'>
-          <span>👋</span>
+          <span>👋🏻</span>
           <div>
-            <p>Hello, I'm</p>
-            <h1>Kenny</h1>
+            <p className='p_text'>Hello, I'm</p>
+            <h1 className='head_text'>Kenny</h1>
           </div>
+        </div>
+        <div className='app_hero-position'>
+          <p className='p_text'>Full-Stack Developer</p>
+          <p className='p_text'>CS/CE NEU @2022</p>
         </div>
       </motion.div>
       <div className='app_hero-profile'>
@@ -21,7 +25,7 @@ function Hero() {
       </div>
       <motion.div className='app_hero-skills'>
         {[images.git, images.react, images.css].map((skill) => (
-          <div key={`skill-${skill}`}>
+          <div key={`skill-${skill}`} className='app_flex'>
             <img src={skill} alt='skill' />
           </div>
         ))}

@@ -41,4 +41,4 @@ function About() {
   );
 }
 
-export default Wrapper(About, "about");
+export default Wrapper(About, "about", "app_whitebg");

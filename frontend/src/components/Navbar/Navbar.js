@@ -8,7 +8,7 @@ import images from "../../constants/images";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
-  const links = ["home", "about", "work"];
+  const links = ["home", "about", "work", "contact"];
 
   return (
     <nav className='app_navbar'>

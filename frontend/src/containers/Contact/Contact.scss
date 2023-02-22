@@ -3,4 +3,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  padding: 3rem 6rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem 2rem;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.app_contact-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  h1 {
+    text-align: left;
+  }
+}
+
+.app_contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+
+  input,
+  textarea,
+  button {
+    width: 75%;
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.5rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  button {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+  }
 }

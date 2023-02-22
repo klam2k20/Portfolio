@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Wrapper from "../Wrapper/Wrapper";
+import { motion } from "framer-motion";
 import "./Work.scss";
 import { client, imageFor } from "../../client";
 
@@ -7,6 +8,7 @@ function Work() {
   const [activeFilter, setActiveFilter] = useState("All");
   const [works, setWorks] = useState([]);
   const [filteredWorks, setFilteredWorks] = useState([]);
+  const [shuffle, setShuffle] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
     const query = "*[_type=='project']";
@@ -18,8 +20,13 @@ function Work() {
 
   const handleFilter = (filter) => {
     setActiveFilter(filter);
-    if (filter === "All") setFilteredWorks(works);
-    else setFilteredWorks(works.filter((w) => w.tags[0] === filter));
+    setShuffle([{ y: 100, opacity: 0 }]);
+
+    setTimeout(() => {
+      setShuffle([{ y: 0, opacity: 1 }]);
+      if (filter === "All") setFilteredWorks(works);
+      else setFilteredWorks(works.filter((w) => w.tags[0] === filter));
+    }, 500);
   };
 
   return (
@@ -37,7 +44,10 @@ function Work() {
           </div>
         ))}
       </div>
-      <div className='app_work-projects'>
+      <motion.div
+        className='app_work-projects'
+        animate={shuffle}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}>
         {filteredWorks.map((project) => (
           <a
             className='app_work-project'
@@ -52,7 +62,7 @@ function Work() {
             </div>
           </a>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

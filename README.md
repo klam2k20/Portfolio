@@ -2,7 +2,7 @@
     <img src="imgs/demo.gif" height="500">
 </p>
 
-<p align="center">[Portfolio Website](https://klam2k20.github.io/Little-Lemon/)</p>
+[Portfolio Website](https://klam2k20.github.io/Little-Lemon/)
 
 ## Technology
 

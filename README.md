@@ -2,10 +2,6 @@
     <img src="imgs/demo.gif" height="500">
 </p>
 
-## Portfolio Website
-
-## Kenny Lam | Aspiring Full-Stack Developer
-
 <p align="center">[Portfolio Website](https://klam2k20.github.io/Little-Lemon/)</p>
 
 ## Technology

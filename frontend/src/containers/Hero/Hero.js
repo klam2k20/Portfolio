@@ -26,15 +26,15 @@ function Hero() {
     <div id='home'>
       <motion.div
         className='app_hero-info'
-        animate={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delay: 0.5 }}>
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.5, delay: 0.1 }}>
         <div className='app_hero-intro'>
           <motion.span
-            animate={{ scale: [0, 1] }}
+            whileInView={{ scale: [0, 1] }}
             transition={{ type: "spring", bounce: 0.5, duration: 1, delay: 1 }}>
             Hello, It's Me
           </motion.span>
-          <motion.div variants={sentence} initial='hidden' animate='visible'>
+          <motion.div variants={sentence} initial='hidden' whileInView='visible'>
             {name.split("").map((char, i) => (
               <motion.h1 key={`${char}-${i}`} variants={letter}>
                 {char}
@@ -45,7 +45,7 @@ function Hero() {
 
         <motion.div
           className='app_hero-position'
-          animate={{ y: [100, 0], opacity: [0, 1] }}
+          whileInView={{ y: [100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5, delay: 3.5 }}>
           <p className='p_text'>Aspiring Full-Stack Developer</p>
           <p className='p_text'>CS/CE NEU @2022</p>

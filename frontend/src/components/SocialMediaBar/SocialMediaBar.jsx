@@ -5,15 +5,15 @@ import "./SocialMediaBar.scss";
 function SocialMediaBar() {
   return (
     <div className='app_social_media'>
-      <div>
+      <a href='https://www.linkedin.com/in/kenny-l-8672141b2/' target='_blank' rel='noreferrer'>
         <IoLogoLinkedin />
-      </div>
-      <div>
+      </a>
+      <a href='https://github.com/klam2k20' target='_blank' rel='noreferrer'>
         <IoLogoGithub />
-      </div>
-      <div>
+      </a>
+      <a href='https://www.instagram.com/kkenny_lam/' target='_blank' rel='noreferrer'>
         <IoLogoInstagram />
-      </div>
+      </a>
     </div>
   );
 }

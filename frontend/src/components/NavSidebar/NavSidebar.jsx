@@ -2,7 +2,7 @@ import React from "react";
 import "./NavSidebar.scss";
 
 function NavSidebar({ activeId }) {
-  const links = ["home", "about", "work", "skills", "contact"];
+  const links = ["home", "about", "work"];
   return (
     <div className='app_navigation_sidebar'>
       {links.map((link) => (

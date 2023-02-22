@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Hero, About, Work, Skills, Contact } from "./containers/index";
+import { Hero, About, Work } from "./containers/index";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.scss";
 
@@ -11,8 +11,6 @@ function App() {
       <Hero />
       <About />
       <Work />
-      <Skills />
-      <Contact />
     </div>
   );
 }

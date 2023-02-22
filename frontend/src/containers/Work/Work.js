@@ -30,6 +30,7 @@ function Work() {
       <div className='app_work-filters'>
         {["All", "Frontend", "Full Stack"].map((filter) => (
           <div
+            key={filter}
             className={`bold_text ${filter === activeFilter ? "app_work-selected-filter" : ""}`}
             onClick={() => handleFilter(filter)}>
             {filter}
@@ -38,7 +39,12 @@ function Work() {
       </div>
       <div className='app_work-projects'>
         {filteredWorks.map((project) => (
-          <a className='app_work-project' href={project.codeLink} target='_blank' rel='noreferrer'>
+          <a
+            className='app_work-project'
+            href={project.codeLink}
+            target='_blank'
+            rel='noreferrer'
+            key={project.codeLink}>
             <img src={imageFor(project.imgUrl)} alt={project.title} />
             <div className='app_work-project-overlay'>
               <h3>{project.title}</h3>

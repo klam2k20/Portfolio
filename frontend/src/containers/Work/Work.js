@@ -30,7 +30,10 @@ function Work() {
   };
 
   return (
-    <div id='work'>
+    <motion.div
+      id='work'
+      whileInView={{ y: [100, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.5 }}>
       <h1 className='head_text'>
         Web <span>Applications</span>
       </h1>
@@ -63,7 +66,7 @@ function Work() {
           </a>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -30,13 +30,14 @@ function Hero() {
         transition={{ duration: 0.5, delay: 0.1 }}>
         <div className='app_hero-intro'>
           <motion.span
+            className='p_text'
             whileInView={{ scale: [0, 1] }}
             transition={{ type: "spring", bounce: 0.5, duration: 1, delay: 1 }}>
             Hello, It's Me
           </motion.span>
           <motion.div variants={sentence} initial='hidden' whileInView='visible'>
             {name.split("").map((char, i) => (
-              <motion.h1 key={`${char}-${i}`} variants={letter}>
+              <motion.h1 className='head_text' key={`${char}-${i}`} variants={letter}>
                 {char}
               </motion.h1>
             ))}

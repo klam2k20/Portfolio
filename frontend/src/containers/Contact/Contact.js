@@ -9,9 +9,8 @@ function Contact() {
         <h1 className='head_text'>
           Available for <span>Select</span> <br /> Freelance <span>Opportunties</span>
         </h1>
-        <span>
-          Have an exciting project you need hello with? <br />
-          Send me an email or contact me via LinkedIn!
+        <span className='p_text'>
+          Have an exciting project you need hello with? Send me an email or contact me via LinkedIn!
         </span>
       </div>
 

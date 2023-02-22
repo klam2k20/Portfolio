@@ -15,10 +15,7 @@ function Contact() {
         </span>
       </div>
 
-      <form
-        className='app_contact-form'
-        action='https://getform.io/f/43404f33-debe-4d9a-966c-ea26ad999562'
-        method='POST'>
+      <form className='app_contact-form' action={process.env.REACT_APP_FORM_ENDPOINT} method='POST'>
         <input type='text' name='name' placeholder='First Last' className='p_text' />
         <input type='text' name='email' placeholder='email@email.com' className='p_text' />
         <textarea

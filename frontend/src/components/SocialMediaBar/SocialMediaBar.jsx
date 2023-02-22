@@ -1,5 +1,6 @@
 import React from "react";
-import { IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "react-icons/io5";
+import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
+import { SiMinutemailer } from "react-icons/si";
 import "./SocialMediaBar.scss";
 
 function SocialMediaBar() {
@@ -11,8 +12,8 @@ function SocialMediaBar() {
       <a href='https://github.com/klam2k20' target='_blank' rel='noreferrer'>
         <IoLogoGithub />
       </a>
-      <a href='https://www.instagram.com/kkenny_lam/' target='_blank' rel='noreferrer'>
-        <IoLogoInstagram />
+      <a href='mailto:lam.ke.nyc@gmail.com'>
+        <SiMinutemailer />
       </a>
     </div>
   );

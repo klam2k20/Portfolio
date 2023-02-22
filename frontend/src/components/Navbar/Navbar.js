@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import resume from "../../resume.pdf";
 import "./Navbar.scss";
 
 import images from "../../constants/images";
@@ -21,6 +22,12 @@ function Navbar() {
             <a href={`#${link}`}>{link}</a>
           </li>
         ))}
+        <li className='app_flex p_text'>
+          <div />
+          <a href={resume} target='_blank' rel='noreferrer'>
+            resume
+          </a>
+        </li>
       </ul>
 
       <div className='app_navbar-menu'>
@@ -39,6 +46,11 @@ function Navbar() {
                   </a>
                 </li>
               ))}
+              <li className='app_flex p_text'>
+                <a href={resume} target='_blank' rel='noreferrer' onClick={() => setToggle(false)}>
+                  resume
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}

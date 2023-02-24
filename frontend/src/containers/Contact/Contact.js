@@ -10,7 +10,7 @@ function Contact() {
           Available for <span>Select</span> <br /> Freelance <span>Opportunties</span>
         </h1>
         <span className='p_text'>
-          Have an exciting project you need hello with? Send me an email or contact me via LinkedIn!
+          Have an exciting project you need help with? Send me an email or contact me via LinkedIn!
         </span>
       </div>
 

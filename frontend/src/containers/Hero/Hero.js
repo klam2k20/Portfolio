@@ -46,7 +46,7 @@ function Hero() {
 
         <motion.div
           className='app_hero-position'
-          whileInView={{ y: [100, 0], opacity: [0, 1] }}
+          whileInView={{ y: [50, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5, delay: 3.5 }}>
           <p className='p_text'>Aspiring Full-Stack Developer</p>
           <p className='p_text'>CS/CE NEU @2022</p>

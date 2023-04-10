@@ -47,7 +47,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 1fr;
+  grid-auto-rows: 15rem;
   gap: 2rem;
 
   .app_work-project {

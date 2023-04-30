@@ -62,4 +62,15 @@
     text-align: center;
     cursor: pointer;
   }
+
+  .error_text {
+    width: 75%;
+    margin-top: -0.5rem;
+    color: red;
+    font-size: 0.75rem;
+    text-align: left;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
 }

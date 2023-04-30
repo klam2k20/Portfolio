@@ -53,7 +53,7 @@ function Contact() {
         onSubmit={handleSubmit}>
         {({ errors, touched }) =>
           serverState.status && serverState.status.ok ? (
-            <h1 className='app_contact-form head_text'>
+            <h1 className='thank_you_text head_text'>
               <span>{serverState.status.msg}</span>
             </h1>
           ) : (

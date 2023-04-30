@@ -28,6 +28,20 @@
   }
 }
 
+.thank_you_text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem;
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+  }
+  @media screen and (max-width: 450px) {
+    padding: 0;
+  }
+}
+
 .app_contact-form {
   display: flex;
   flex-direction: column;

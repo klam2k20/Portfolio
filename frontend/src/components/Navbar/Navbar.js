@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import resume from '../../Resume.pdf';
+import resume from '../../resume.pdf';
 import './Navbar.scss';
 
 import images from '../../constants/images';

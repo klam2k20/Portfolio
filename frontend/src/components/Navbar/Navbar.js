@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { HiOutlineMenu, HiX } from "react-icons/hi";
-import { motion } from "framer-motion";
-import resume from "../../resume.pdf";
-import "./Navbar.scss";
+import React, { useState } from 'react';
+import { HiOutlineMenu, HiX } from 'react-icons/hi';
+import { motion } from 'framer-motion';
+import resume from '../../Resume.pdf';
+import './Navbar.scss';
 
-import images from "../../constants/images";
+import images from '../../constants/images';
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
-  const links = ["home", "about", "work", "contact"];
+  const links = ['home', 'about', 'work', 'contact'];
 
   return (
     <nav className='app_navbar'>
@@ -34,9 +34,9 @@ function Navbar() {
         {!toggle && <HiOutlineMenu onClick={() => setToggle(true)} />}
         {toggle && (
           <motion.div
-            initial={{ x: "100%" }}
-            whileInView={{ x: ["100%", "0%"] }}
-            transition={{ duration: 0.75, ease: "easeOut" }}>
+            initial={{ x: '100%' }}
+            whileInView={{ x: ['100%', '0%'] }}
+            transition={{ duration: 0.75, ease: 'easeOut' }}>
             <HiX onClick={() => setToggle(false)} />
             <ul>
               {links.map((link) => (

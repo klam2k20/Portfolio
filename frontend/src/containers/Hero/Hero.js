@@ -1,8 +1,8 @@
-import React from "react";
-import Wrapper from "../Wrapper/Wrapper";
-import { motion } from "framer-motion";
-import images from "../../constants/images";
-import "./Hero.scss";
+import React from 'react';
+import Wrapper from '../Wrapper/Wrapper';
+import { motion } from 'framer-motion';
+import images from '../../constants/images';
+import './Hero.scss';
 
 const sentence = {
   hidden: { opacity: 1 },
@@ -20,7 +20,7 @@ const letter = {
 };
 
 function Hero() {
-  const name = "Kenny";
+  const name = 'Kenny';
 
   return (
     <div id='home'>
@@ -32,11 +32,11 @@ function Hero() {
           <motion.span
             className='p_text'
             whileInView={{ scale: [0, 1] }}
-            transition={{ type: "spring", bounce: 0.5, duration: 1, delay: 1 }}>
+            transition={{ type: 'spring', bounce: 0.5, duration: 1, delay: 1 }}>
             Hello, It's Me
           </motion.span>
           <motion.div variants={sentence} initial='hidden' whileInView='visible'>
-            {name.split("").map((char, i) => (
+            {name.split('').map((char, i) => (
               <motion.h1 className='head_text' key={`${char}-${i}`} variants={letter}>
                 {char}
               </motion.h1>
@@ -48,7 +48,7 @@ function Hero() {
           className='app_hero-position'
           whileInView={{ y: [50, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5, delay: 3.5 }}>
-          <p className='p_text'>Aspiring Full-Stack Developer</p>
+          <p className='p_text'>Full-Stack SWE</p>
           <p className='p_text'>CS/CE NEU @2022</p>
           <p className='p_text'>Based in NYC</p>
         </motion.div>
@@ -60,4 +60,4 @@ function Hero() {
   );
 }
 
-export default Wrapper(Hero, "home");
+export default Wrapper(Hero, 'home');
